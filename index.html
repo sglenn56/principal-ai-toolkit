@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Principal AI Toolkit (Elementary)</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script defer src="./assets/tools.js"></script>
+  <script defer src="./assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="brand-mark">AI</div>
+        <div>
+          <h1 class="brand-title">Principal AI Toolkit</h1>
+          <p class="brand-subtitle">Practical, FERPA-aware tools for elementary principals</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a class="btn secondary" href="./tool.html?id=parent-email-response">Start with Tool #1</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>What do you need help with today?</h2>
+      <p class="muted">Search tools by task. Each tool includes a copy-ready prompt and quick adjustments.</p>
+
+      <div class="controls">
+        <input id="searchInput" class="input" type="search" placeholder="Search (e.g., parent email, observation, behavior, PLC)..." />
+        <select id="categorySelect" class="select">
+          <option value="all">All categories</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="grid" id="toolGrid" aria-live="polite"></section>
+
+    <section class="card subtle">
+      <h3>FERPA & Safety Note</h3>
+      <p class="small">
+        Do not enter student names, dates of birth, addresses, IEP details, or other identifying information into AI tools.
+        Use general descriptions (e.g., "a 3rd-grade student") and keep notes non-identifying.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small muted">
+      © <span id="year"></span> Principal AI Toolkit • Built for quick, real-world school leadership work.
+    </div>
+  </footer>
+</body>
+</html>
